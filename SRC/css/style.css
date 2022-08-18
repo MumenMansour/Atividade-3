@@ -1,0 +1,23 @@
+:root{
+    --varFundoTexto: rgba(28,25,56,255);
+    --varTextoBoddy: rgba(119,116,143,255);
+    --varCorTextoSpan: rgba(172,90,219,255);
+}
+body{
+    background-color: black;
+}
+main{ 
+    margin: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--varFundoTexto);
+}
+
+.imgatemHead img{
+    width: 100%;
+}
+
+
+
+
