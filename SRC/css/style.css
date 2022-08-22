@@ -7,17 +7,101 @@ body{
     background-color: black;
 }
 main{ 
+    
     margin: 25px;
     text-align: center;
     display: flex;
     flex-direction: column;
+    
+}
+.container{
     background-color: var(--varFundoTexto);
 }
-
 .imgatemHead img{
     width: 100%;
+    border-radius: 15px  15px 0 0;
+}
+.imagemTopo{
+    border-radius: 25px;
 }
 
+.textomedio{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 
+.textoTitulo span{
+    color: blueviolet;
+}
+.textoTitulo h1{
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px;
+}
+.textoCorpo p{
+    color: var(--varTextoBoddy);
+}
 
+.info{ 
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 
+.info h1{
+    color: white;
+}
+.info p{
+    color: var(--varTextoBoddy);
+    font-size: 0.6rem;
+}
+
+@media (min-width: 768px){
+    .container{
+        align-items: center;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .textoCorpo{
+        max-width: 80%;
+    }
+    .informacoes{
+        max-width: 80%; 
+     
+    }
+    .imagemTopo img{
+        max-width: 100%;
+
+    }
+
+    .info{
+        padding: 15px;
+    }
+    .informacoes {
+        
+        display: flex;
+        flex-direction: row;
+    }
+
+    .textoCorpo p{
+        
+        text-align: left;
+    }
+}
+
+@media (min-width: 1440px){
+    main{
+        height: 100vh;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .container{
+        max-width: 60%;
+    }
+}
